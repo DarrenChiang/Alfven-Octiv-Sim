@@ -1,0 +1,7 @@
+{
+    "timestamp": "32 bits Integer",
+    "frequency": "Single Precision floating number",
+    "voltage":["Array of Single Precision floating number"],
+    "current":["Array of Single Precision floating number"],
+    "phase":["Array of Single Precision floating number"]
+}

@@ -1,0 +1,21 @@
+#!C:\xampp\php\php.exe
+
+<?php
+    echo "Content-Type: application/json\n\n";
+
+    include "../utils.php";
+
+    $file = "responses/server_temp.json";
+    http_response_code(200);
+
+    if (file_exists($file)) {
+        $response = json_decode(file_get_contents($file), true);
+    } else {
+        $response = array();
+    }
+
+    $response["PCB_Temperature"] = rand();
+    $response["Sensor_Temperature"] = rand();
+
+    echo json_encode($response, JSON_PRETTY_PRINT);
+?>

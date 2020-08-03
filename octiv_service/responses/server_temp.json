@@ -1,0 +1,4 @@
+{
+    "PCB_Temperature": "Single precision floating point number",
+    "Sensor_Temperature": "Single precision floating point number"
+}

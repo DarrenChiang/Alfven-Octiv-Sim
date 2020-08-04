@@ -1,0 +1,4 @@
+{
+    "ion_flux": "Single Precision Floating point number",
+    "channel": ["Array of channel structures"]
+}

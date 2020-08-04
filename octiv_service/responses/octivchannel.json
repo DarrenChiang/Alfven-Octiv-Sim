@@ -1,0 +1,11 @@
+{
+    "timestamp": "32 bits Integer",
+    "frequency": "Single Precision floating number",
+    "power": "Single Precision floating number",
+    "forward_power": "Single Precision floating number",
+    "reflected_power": "Single Precision floating number",
+    "standing_wave_ratio": "Single Precision floating number",
+    "voltage": ["Array of Single Precision floating number"],
+    "current": ["Array of Single Precision floating number"],
+    "phase": ["Array of Single Precision floating number"]
+}

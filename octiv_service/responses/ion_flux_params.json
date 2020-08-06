@@ -1,5 +1,5 @@
 {
-    "voltage_drop": "Single precision floating point number",
-    "series_resistance": "Single precision floating point number",
-    "electrode_area": "Single precision floating point number"
+    "voltage_drop": "Single",
+    "series_resistance": "Single",
+    "electrode_area": "Single"
 }

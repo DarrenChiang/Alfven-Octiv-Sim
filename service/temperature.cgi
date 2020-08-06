@@ -11,10 +11,6 @@
     if (file_exists($file)) {
         $response = json_decode(file_get_contents($file), true);
         assign($response);
-    } else {
-        $response = array();
-        $response["PCB_Temperature"] = rand();
-        $response["Sensor_Temperature"] = rand();
     }
 
     echo json_encode($response, JSON_PRETTY_PRINT);

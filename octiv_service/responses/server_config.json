@@ -1,5 +1,5 @@
 {
-    "refresh_rate": "32 bits Integer",
-    "selected_harmonics": ["32 bits Integer array"],
-    "signal_lock": "8 bit ascii character"
+    "refresh_rate": "Integer",
+    "selected_harmonics": "Integer",
+    "signal_lock": "String ('V' or 'C')"
 }

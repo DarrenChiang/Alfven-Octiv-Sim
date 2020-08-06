@@ -53,4 +53,47 @@
 
         return $arr;
     }
+
+    /**
+     * Test function to automatically assign values to array from preset json.
+     * 
+     * @param {&$array} array to be updated after decoding from JSON string
+     */
+    function assign(&$array, $uniform_arr_len = NULL) {
+        foreach ($array as $key => $value) {
+            switch ($value) {
+                case "Integer":
+                    $array[$key] = rand();
+                    echo "hi";
+                    break;
+                case "Single":
+                    #Float in PHP is not single precision. Use integer for now.
+                    $array[$key] = rand();
+                    break;
+                case "STRING":
+                    $array[$key] = str_rand();
+                    break;
+                case "DATESTRING":
+                    $array[$key] = date("M d Y", mt_rand(1, time()));
+                    break;
+                case "String ('Y' or 'N')":
+                    $array[$key] = rand(0, 1) ? 'Y' : 'N';
+                    break;
+                case "String ('V' or 'C')":
+                    $array[$key] = rand(0, 1) ? 'V' : 'C';
+                    break;
+                case "String ('V' or 'I')":
+                    $array[$key] = rand(0, 1) ? 'V' : 'I';
+                    break;               
+                case "Array of Integers":
+                case "Array of Singles":
+                    #Float in PHP is not single precision. Use integer for now.
+                    $array[$key] = $uniform_arr_len === NULL ? int_arr_rand() : int_arr_rand($uniform_arr_len, true);
+                    break;
+                case "Array of two Integers":
+                    $array[$key] = int_arr_rand(2, true);
+                    break;                       
+            }
+        }
+    }
 ?>

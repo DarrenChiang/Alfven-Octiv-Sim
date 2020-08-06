@@ -15,12 +15,12 @@
         $response = array();
         $response["serial_number"] = str_rand();
         $response["sensor_type"] = str_rand();
-        $response["frequencies"] = int_arr_rand();
-        $response["harmonics"] = int_arr_rand();
+        $response["frequency"] = int_arr_rand(2, true);
         $response["firmware"] = str_rand();
         $response["firmware_rev"] = str_rand();
-        $response["fpga_rev"] = str_rand();    
+        $response["build_date"] = date("M d Y", mt_rand(1, time()));
+        $response["fpga_rev"] = str_rand();
     }
-    
-    echo json_encode($response, JSON_PRETTY_PRINT);    
+
+    echo json_encode($response, JSON_PRETTY_PRINT);
 ?>

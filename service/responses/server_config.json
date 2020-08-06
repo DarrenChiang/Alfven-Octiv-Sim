@@ -1,0 +1,23 @@
+{
+    "freqency_limit": "Array of two Integers",
+    "refresh_rate": "Integer",
+    "signal_lock": "String ('V' or 'I')",
+    "signal_base_threshold": "Single",
+    "noise_filter_length": "Integer",
+    "event_max_length_1": "Integer",
+    "event_min_amplitude_1": "Integer",
+    "event_max_length_2": "Integer",
+    "event_min_amplitude_2": "Integer",
+    "event_max_length_3": "Integer",
+    "event_max_amplitude_3": "Integer",
+    "capture_switch_on_events": "String ('Y' or 'N')",
+    "min_switch_off_length": "Integer",
+    "event_points": "Integer",
+    "voltage_factor":"Single",
+    "current_factor": "Single",
+    "pulse_period_min": "Integer",
+    "pulse_period_max": "Integer",
+    "pulse_on_min": "Integer",
+    "pulse_on_max": "Integer",
+    "capture_all_pulses": "String ('Y' or 'N')"
+}

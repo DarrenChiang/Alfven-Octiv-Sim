@@ -1,9 +1,9 @@
 {
-    "serial_number":"STRING",
+    "serial_number": "STRING",
     "sensor_type": "STRING",
-    "frequencies": "Array of Singles",
-    "harmonics": "Array of Integers",
+    "frequency": "Array of two Integers",
     "firmware": "STRING",
     "firmware_rev": "STRING",
+    "build_date" : "DATESTRING",
     "fpga_rev": "STRING"
 }

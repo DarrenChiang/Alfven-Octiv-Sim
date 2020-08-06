@@ -5,16 +5,12 @@
 
     include "../utils.php";
 
-    $file = "responses/server_temp.json";
+    $file = "responses/server_data.json";
     http_response_code(200);
 
     if (file_exists($file)) {
         $response = json_decode(file_get_contents($file), true);
-        assign($response);
-    } else {
-        $response = array();
-        $response["PCB_Temperature"] = rand();
-        $response["Sensor_Temperature"] = rand();
+        assign($response, 10);
     }
 
     echo json_encode($response, JSON_PRETTY_PRINT);

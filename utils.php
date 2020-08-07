@@ -64,7 +64,6 @@
             switch ($value) {
                 case "Integer":
                     $array[$key] = rand();
-                    echo "hi";
                     break;
                 case "Single":
                     #Float in PHP is not single precision. Use integer for now.

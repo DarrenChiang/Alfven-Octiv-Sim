@@ -11,6 +11,9 @@
     if (file_exists($file)) {
         $response = json_decode(file_get_contents($file), true);
         assign($response);
+    } else {
+    	http_response_code(500);
+    	exit();
     }
 
     echo json_encode($response, JSON_PRETTY_PRINT);

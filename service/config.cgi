@@ -34,6 +34,8 @@
             $response["voltage_factor"] = rand();
             $response["current_factor"] = rand();
             #Incomplete.
+            http_response_code(500);
+            exit();
         }
     }
 

@@ -1,0 +1,7 @@
+{
+    "start": "Integer",
+    "end": "Integer",
+    "max_transaction_points": "Integer",
+    "number_of_points": "Integer",
+    "number_of_events": "Integer"
+ }

@@ -1,0 +1,10 @@
+{
+    "Time_us": "Integer",
+    "Time_Increment_us": "Integer",
+    "Sample_Count": "Integer",
+    "Type": "STRING",
+    "Reduce_factor": "Integer",
+    "Voltage": "Array of Singles",
+    "Current_Ir": "Array of Singles",
+    "Current_Ii": "Array of Singles"
+ }

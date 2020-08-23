@@ -1,7 +1,7 @@
 #!C:\xampp\php\php.exe
 
 <?php
-    echo "Content-Type: application/json\n\n";
+    #echo "Content-Type: application/json\n\n";
 
     include "../utils.php";
 
